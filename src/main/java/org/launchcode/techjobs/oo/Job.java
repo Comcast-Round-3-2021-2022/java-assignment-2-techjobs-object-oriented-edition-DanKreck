@@ -6,7 +6,6 @@ public class Job {
 
     private int id;
     private static int nextId = 1;
-
     private String name;
     private Employer employer;
     private Location location;
@@ -30,7 +29,6 @@ public class Job {
     @Override
     public String toString() {
         String notAvail = "Data not available";
-
         String nameCheck = name == "" ? notAvail : name;
         String empCheck = employer.getValue() == "" ? notAvail : employer.getValue();
         String locCheck = location.getValue() == "" ? notAvail : location.getValue();
@@ -46,10 +44,8 @@ public class Job {
                     "\nCore Competency: " + coreCheck + "\n";
         }else {
             return "OOPS! This job does not seem to exist.";
-
         }
     }
-
 
     @Override
     public boolean equals(Object o) {

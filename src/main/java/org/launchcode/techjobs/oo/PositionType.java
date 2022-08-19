@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class PositionType extends JobField{
 
-
     public PositionType(String value) {
         super(value);
     }
@@ -16,5 +15,4 @@ public class PositionType extends JobField{
         PositionType that = (PositionType) o;
         return getId() == that.getId() && Objects.equals(getValue(), that.getValue());
     }
-
 }
