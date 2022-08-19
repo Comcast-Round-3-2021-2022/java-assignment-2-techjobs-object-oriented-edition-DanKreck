@@ -1,10 +1,40 @@
 package org.launchcode.techjobs.oo;
 
-public class JobField {
+import java.util.Objects;
 
-//    What fields do ALL FOUR of the classes have in common?
-//    Which constructors are the same in ALL FOUR classes?
-//    What getters and setters do ALL of the classes share?
-//    Which custom methods are identical in ALL of the classes?
+abstract class JobField {
+
+    private int id;
+    private static int nextId = 1;
+    private String value;
+
+    public JobField() {
+        id = nextId;
+        nextId++;
+    }
+
+    public JobField(String value) {
+        this();
+        this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return value;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
+    }
+
+    public int getId() {return id;}
+
+    public String getValue() {
+        return value;
+    }
+    public void setValue(String value) {
+        this.value = value;
+    }
 
 }
