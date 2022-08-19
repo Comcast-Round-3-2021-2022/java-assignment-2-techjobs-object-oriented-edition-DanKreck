@@ -18,8 +18,6 @@ public class Employer {
         this.value = value;
     }
 
-    // Custom toString, equals, and hashCode methods:
-
     @Override
     public String toString() {
         return value;
@@ -38,8 +36,6 @@ public class Employer {
         return Objects.hash(getId());
     }
 
-    // Getters and Setters:
-
     public int getId() {
         return id;
     }
@@ -47,7 +43,6 @@ public class Employer {
     public String getValue() {
         return value;
     }
-
     public void setValue(String value) {
         this.value = value;
     }

@@ -29,8 +29,6 @@ public class CoreCompetency {
         this.value = value;
     }
 
-    // Custom toString, equals, and hashCode methods:
-
     @Override
     public String toString() {
         return value;
