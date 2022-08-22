@@ -51,7 +51,7 @@ public class JobTest {
                 new Location("Philadelphia"),
                 new PositionType("Customer Service"),
                 new CoreCompetency("Friendly"));
-        assertFalse(job1 == job2);
+        assertFalse(job1.equals(job2));
     }
 
     @Test
